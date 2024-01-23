@@ -116,8 +116,9 @@ body {
 }
 
 .header__items {
-    max-width: 1110px;
-    padding: 29px 0px 30px;
+    /*max-width: 1110px;*/
+    padding-top: 29px;
+    padding-bottom: 30px;
     justify-content: space-between;
 }
 
