@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     src: local('Montserrat-Medium'),
     url('../fonts/Roboto-Medium.woff2') format('woff2'),
     url('../fonts/Roboto-Medium.woff') format('woff');
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     src: local('Montserrat-Bold'),
     url('../fonts/Roboto-Bold.woff2') format('woff2'),
     url('../fonts/Roboto-Bold.woff') format('woff');
@@ -149,21 +149,23 @@ body {
 
 .hero {
     width: 100%;
-    min-height: 620px;
     background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero__image {
+    background: url("../img/hero.png") no-repeat 17px 15px;
+    background-size: 95%;
 }
 
 .hero__header {
     margin-bottom: 27px;
-    padding-top: 130px;
+    padding-top: 131px;
 
     color: #FFF;
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 60px */
-
-    letter-spacing: 0.3px;
 }
 
 .hero__text {
@@ -177,6 +179,7 @@ body {
 }
 
 .hero__button {
+    margin-bottom: 130px;
     padding: 24px 75.5px;
 
     border: none;
@@ -188,45 +191,270 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
-    letter-spacing: 0.3px;
 }
 
 /* About us
    ========================================================================== */
 
+.about-us {
+    margin-bottom: 64px;
+    padding-top: 80px;
+}
+
+.about-us__first-block {
+    margin-bottom: 7px;
+}
+
+.about-us__image1 {
+    min-width: 160px;
+    background: url(../img/aboutus1.png) no-repeat 15px 21px;
+    background-size: auto;
+}
 
 .about-us__preferences {
+    padding-left: 15px;
     list-style: none;
+}
+
+.about-us__header {
+    margin-bottom: 16px;
+
+    color: #2E2B44;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+}
+
+.about-us__text {
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.about-us__preference {
+    min-height: 80px;
+    margin-right: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+.about-us__image2 {
+    background: url(../img/aboutus2.svg) no-repeat;
+    background-size: auto;
+}
+
+.about-us__image3 {
+    background: url(../img/aboutus3.svg) no-repeat;
+    background-size: auto;
+}
+
+.about-us__image4 {
+    background: url(../img/aboutus4.svg) no-repeat;
+    background-size: auto;
+}
+
+.about-us__image2,
+.about-us__image3,
+.about-us__image4 {
+    padding-left: 110px;
 }
 
 /* Teachers
    ========================================================================== */
 
+.teachers {
+    min-height: 576px;
+    background: #212133;
+}
+
+.teachers__container {
+    max-width: 1110px;
+    padding: 75px 0 72px 0;
+}
+
+.teachers__header {
+    margin-bottom: 23px;
+
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+}
+
 .teachers__block {
     flex-direction: column;
+}
+
+.teachers__img {
+    margin-bottom: 26px;
+}
+
+.teachers__photo {
+    border-radius: 20px 20px 0px 0px;
+    background: lightgray -25.75px -2.783px / 117.759% 126.481% no-repeat;
+}
+
+.teachers__name {
+    margin-bottom: 8px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+.teachers__description {
+    color: #85859B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
 }
 
 /* Courses
    ========================================================================== */
 
+.courses {
+    margin-bottom: 50px;
+    padding-top: 75px;
+}
+
+.courses__header {
+    margin-bottom: 23px;
+
+    color: #212133;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+}
+
 .courses__block {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 210px 30px 30px 30px;
     flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.courses__timer {
+    position: absolute;
+    top: 13px;
+    right: 4.5px;
+    padding-left: 29px;
+
+    display: inline-block;
+    background-image: url(../img/timer.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.courses__block1 {
+    background: url(../img/courses1.jpg) no-repeat top center;
+    background-color: #EDF0F9;
+    background-size: contain;
+}
+
+.courses__block2 {
+    background: url(../img/courses2.jpg) no-repeat top center;
+    background-color: #EDF0F9;
+    background-size: contain;
+}
+
+.courses__block3 {
+    background: url(../img/courses3.jpg) no-repeat top center;
+    background-color: #EDF0F9;
+    background-size: contain;
+}
+
+.courses__block4 {
+    background: url(../img/courses4.jpg) no-repeat top center;
+    background-color: #EDF0F9;
+    background-size: contain;
+}
+
+.courses__name {
+    margin-bottom: 9px;
+
+    color: #212133;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+.courses__description {
+    min-height: 96px;
+    margin-bottom: 48px;
+
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.courses__button {
+    padding: 20.5px 59px;
+
+    border: none;
+    border-radius: 20px;
+    background: #3F2AFF;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /* Footer
    ========================================================================== */
 
 .footer__social-media {
+    margin: 0;
+    padding: 28px 0 24px 0;
+    justify-content: center;
     list-style: none;
     gap: 30px;
-}
-
-.footer__social-media {
-    justify-content: center;
-    padding: 0;
+    background: #2E2B44;
 }
 
 .footer__description {
+    padding-top: 3px;
     text-align: center;
+
+    color: #2E2B44;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer__copyright {
+    color: #3F2AFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
