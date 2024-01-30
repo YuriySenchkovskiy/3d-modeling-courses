@@ -231,6 +231,7 @@
     .header__items {
         padding-top: 26px;
         padding-bottom: 26px;
+        padding-right: 0;
         -webkit-box-flex: 0;
         -ms-flex: none;
         flex: none;
@@ -238,6 +239,7 @@
 
     .header__logo {
         margin-bottom: 24px;
+        padding-right: 15px;
     }
 
     .nav {
